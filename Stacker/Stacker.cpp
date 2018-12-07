@@ -1,8 +1,8 @@
+#include <SDL_image.h>
 #include "Stacker.h"
 #include "Constants.h"
 #include "Grid.h"
 #include "Menu.h"
-#include <SDL_image.h>
 #include "Utility.h"
 
 Stacker::Stacker():

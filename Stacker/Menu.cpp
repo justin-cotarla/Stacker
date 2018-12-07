@@ -1,5 +1,5 @@
-#include "Menu.h"
 #include <SDL.h>
+#include "Menu.h"
 
 Menu::Menu(SDL_Texture* menu_texture):
  menu_texture(menu_texture){

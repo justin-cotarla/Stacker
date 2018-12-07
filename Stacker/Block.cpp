@@ -1,6 +1,6 @@
+#include <SDL_image.h>
 #include "Block.h"
 #include "Grid.h"
-#include <SDL_image.h>
 #include "Constants.h"
 
 Block::Block(Point p, Grid *g, SDL_Texture *block_texture):

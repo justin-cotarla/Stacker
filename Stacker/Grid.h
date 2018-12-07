@@ -17,16 +17,16 @@ public:
 	~Grid();
 
 	//Checks if cell exists in grid
-	bool is_cell_valid(Point &p);
+	bool is_cell_valid(const Point &p);
 
 	//Changes the value of an existing cell
-	void set_cell(Point &p, Block *b);
+	void set_cell(const Point &p, Block *b);
 
 	//Empties grid for given row
 	void clear_row(int row);
 
 	//Returns block for given cell
-	Block* get_cell(Point &p);
+	Block* get_cell(const Point &p);
 
 	//Returns width of grid in cells
 	int get_width() const;

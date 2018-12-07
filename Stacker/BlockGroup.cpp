@@ -1,7 +1,7 @@
+#include <SDL.h>
 #include "BlockGroup.h"
 #include "Grid.h"
 #include "Stacker.h"
-#include <SDL.h>
 #include "Block.h"
 #include "Utility.h"
 

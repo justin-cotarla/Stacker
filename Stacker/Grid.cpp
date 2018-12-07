@@ -1,8 +1,8 @@
+#include <SDL.h>
+#include <SDL_image.h>
 #include "Grid.h"
 #include "Point.h"
 #include "Block.h"
-#include <SDL.h>
-#include <SDL_image.h>
 
 
 Grid::Grid(int width, int height, SDL_Texture *grid_texture):
@@ -24,7 +24,7 @@ Grid::~Grid(){
 	reset();
 }
 
-bool Grid::is_cell_valid(Point& p){
+bool Grid::is_cell_valid(const Point& p){
 	if(p.x >= 0 && p.x < width){
 		return true;
 	}else{
@@ -38,13 +38,13 @@ void Grid::clear_row(int row){
 	}
 }
 
-void Grid::set_cell(Point &p, Block *b){
+void Grid::set_cell(const Point &p, Block *b){
 	if(is_cell_valid(p)){
 		block_grid[p.x][p.y] = b;
 	}
 }
 
-Block* Grid::get_cell(Point &p){
+Block* Grid::get_cell(const Point &p){
 	return block_grid[p.x][p.y];
 }
 

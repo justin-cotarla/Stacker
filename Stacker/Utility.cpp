@@ -1,5 +1,5 @@
-#include "Utility.h"
 #include <SDL_image.h>
+#include "Utility.h"
 #include <stdio.h>
 #include <string>
 
